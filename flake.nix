@@ -35,6 +35,10 @@
       url = "github:MichaelAquilina/zsh-history-filter";
       flake = false;
     };
+    zsh-auto-notify = {
+      url = "github:MichaelAquilina/zsh-auto-notify";
+      flake = false;
+    };
   };
 
   nixConfig = {
@@ -126,6 +130,7 @@
             "zsh-nix-shell"
             "zsh-fast-syntax-highlighting"
             "zsh-history-filter"
+            "zsh-auto-notify"
           ]
           (name: inputs.${name}.outPath);
       };
